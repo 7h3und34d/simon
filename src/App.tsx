@@ -44,10 +44,10 @@ function Play({ press }: PlayProps) {
 }
 
 function App() {
-  const { status, matches, dispatch, seq, uSeq, index } = useGameMachine();
-  console.log(status, seq, uSeq, index);
+  const { score, matches, dispatch, seq, index } = useGameMachine();
   return (
     <MainLayout>
+      <h1>{score}</h1>
       <GameContainer>
         {matches("gameOver") ? (
           <button onClick={startNewGame(dispatch)}>Start a new game</button>

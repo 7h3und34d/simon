@@ -6,6 +6,7 @@ const MainLayout = styled.main`
   height: 100%;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 `;
 
 export default MainLayout;
